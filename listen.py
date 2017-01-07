@@ -3,7 +3,7 @@
 
 from bs4 import BeautifulSoup
 from gi.repository import Notify, GdkPixbuf
-import login 
+from helpers import login 
 import time 
 
 
@@ -31,7 +31,7 @@ def pm_notify(user,subject):
 	    body, # Optional
 	)
 
-	image = GdkPixbuf.Pixbuf.new_from_file("msg.png")
+	image = GdkPixbuf.Pixbuf.new_from_file("helpers/msg.png")
 	notification.set_icon_from_pixbuf(image)
 	notification.set_image_from_pixbuf(image)
 
